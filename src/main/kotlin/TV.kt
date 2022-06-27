@@ -52,6 +52,18 @@ class TV(brand: String, model: String, diagonalSize: Int) {
             if (numberOfCurrentChannel - 1 < 0) channelList.size - 1 else numberOfCurrentChannel - 1
         println("${channelList[numberOfCurrentChannel]} is On")
     }
+    
+    /* Сеттер для уровня громкости
+    private var volumeLevel = 0
+        set(value) {
+            if ((value >= 0) and (value <= maximumVolume))
+                field = value
+            else if (value > maximumVolume)
+                field = maximumVolume
+            else field = 0
+        }
+
+    */
 
     companion object {
         const val maxVolume = 100
